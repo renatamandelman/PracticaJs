@@ -77,3 +77,6 @@ function changeSection(backgroundColor,textColor){
 //     p.style.fontSize =`${fontSizes[fontSizeIndex]}em` ;
 }
 
+function changeFont(i){
+    document.querySelector("section").style.fontFamily= fonts[i] ;
+}
