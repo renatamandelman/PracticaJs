@@ -24,21 +24,21 @@
 
         <nav>
             <ul>
-                <li onclick="openItems()" class="borde"><a href="#">Caja</a>
+                <li  class="borde"><a data-menu="menu-box" href="javascript:openItemsMenu('menu-box')">Caja</a>
                     <ul>
-                        <li><a href="#">fondo a</a></li>
-                        <li><a href="#">fondo b</a></li>
-                        <li><a href="#">fondo c</a></li>
+                        <li><a href="javascript:changeSection('#999', '#000')">fondo a</a></li>
+                        <li><a href="javascript:changeSection('#666', '#ccc')">fondo b</a></li>
+                        <li><a href="javascript:changeSection('#333', '#ccc')">fondo c</a></li>
                     </ul>
                 </li>
-                <li onclick="openItems()" class="borde"><a href="#">Texto</a>
+                <li  class="borde"><a data-menu="menu-text"href="javascript:openItemsMenu('menu-text')">Texto</a>
                     <ul>
                         <li><a href="#">tipografía a</a></li>
                         <li><a href="#">tipografía b</a></li>
                         <li><a href="#">tipografía c</a></li>
                     </ul>
                 </li>
-                <li onclick="openItems()" class="borde"><a href="#">Imagen</a>
+                <li  class="borde"><a data-menu="menu-img"href="javascript:openItemsMenu('menu-img')">Imagen</a>
                     <ul>
                         <li><a href="#">foto a</a></li>
                         <li><a href="#">foto b</a></li>

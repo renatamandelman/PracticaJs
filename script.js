@@ -4,7 +4,7 @@ function toggleTitle() {
     title.innerHTML === "Práctica Javascript"? "Hola ¿Como va?": "Práctica Javascript";
 }
 
-const fontSizes = [9, 10, 12, 14, 16, 20, 22, 24];
+const fontSizes = [0.563, 0.625, 0.75, 0.875, 1, 1.25, 1.375, 1.5];
 
 let fontSizeIndex = Math.floor(fontSizes.length / 2);
 
@@ -34,7 +34,12 @@ function changeFontSize(action /* 0 = reset, 1 = increase, -1 decrease */) {
       toggleButton("btnDec", false);
     }
   }
+  const ps = document.querySelectorAll("section p");
+  for (let i = 0; i < ps.length; i++) {
+    const p = ps[i];
+    p.style.fontSize =`${fontSizes[fontSizeIndex]}em` ;
   
+}
 }
 function toggleButton(dataBtn, enabled) {
   let btn = document.querySelector(`header ul li a[data-btn='${dataBtn}']`);
@@ -48,38 +53,27 @@ const buttons = document.querySelectorAll("header ul li a");
     button.classList.remove("disabled");
 }
 }
-/* const menuItems = document.get(".borde");
-console.log(menuItems.length)
-
-for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-    
+// Funcion navbar
+function closeItemsMenus(){
+    const menus = document.querySelectorAll("nav ul li ul");
+    for (let i = 0; i < menus.length; i++) {
+      const menu = menus[i];
+      menu.style.display = "none"; 
 }
-function openItems(){
-    if(document.querySelector(".borde ul").style.display == "block"){
-    document.querySelector(".borde ul").style.display = "none";
-    } else{
-    document.querySelector(".borde ul").style.display = "block";
-
-    }
 }
-agregar un evento de click
+function openItemsMenu(menu){
+    closeItemsMenus();
+    document.querySelector(`nav ul li a[data-menu='${menu}'] + ul`).style.display = "block";
 
+}
+// Funcion cambiar fondos y textos
+function changeSection(backgroundColor,textColor){
+    const section = document.querySelector("section");
+  section.style.backgroundColor = backgroundColor;
+    section.style.color = textColor;
+//     const ps = document.querySelectorAll("section p");
+//   for (let i = 0; i < ps.length; i++) {
+//     const p = ps[i];
+//     p.style.fontSize =`${fontSizes[fontSizeIndex]}em` ;
+}
 
-function openItems(){
-    const ulName = document.querySelector(".borde ul").style.display;
-console.log(ulName);
-   if(ulName == "none"){
-    ulName = "block";
-   } 
-
-} 
-document.querySelectorAll(".borde").onclick = function(){
-    if(liName.innerHTML === "a"){
-        document.querySelectorAll(".borde ul").style.display = "block"
-    } else if(liName.innerHTML === "Texto"){
-        document.querySelectorAll(".borde ul").style.display = "block"
-    } else if(liName.innerHTML === "Imagen"){
-        document.querySelectorAll(".borde ul").style.display = "block"
-    }
-}*/

@@ -95,7 +95,7 @@ nav ul li a{
     margin-left: 0.2em;
     color:white;
 }
-nav li:hover{
+ .borde:hover{
     background-color: #BBBBBB;
     cursor:pointer;
 }
@@ -107,7 +107,6 @@ section{
     width: 700px;
   height: fit-content;
   padding:0.8em;
-
 
 }
 
