@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Práctica Javascript</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <div class="todo">
+        <header>
+            <h1 onclick="toggleTitle()">Práctica Javascript</h1>
+            <div>
+                <ul>
+                    <li ><a data-btn="btnReset" href="javascript:changeFontSize(0)">Aa</a></li>
+                    <li><a  data-btn="btnInc"  href="javascript:changeFontSize(1)">A+</a></li>
+                    <li><a  data-btn="btnDec"  href="javascript:changeFontSize(-1)">a-</a></li>
+                </ul>
+            </div>
+            
+        </header>
+
+        <nav>
+            <ul>
+                <li onclick="openItems()" class="borde"><a href="#">Caja</a>
+                    <ul>
+                        <li><a href="#">fondo a</a></li>
+                        <li><a href="#">fondo b</a></li>
+                        <li><a href="#">fondo c</a></li>
+                    </ul>
+                </li>
+                <li onclick="openItems()" class="borde"><a href="#">Texto</a>
+                    <ul>
+                        <li><a href="#">tipografía a</a></li>
+                        <li><a href="#">tipografía b</a></li>
+                        <li><a href="#">tipografía c</a></li>
+                    </ul>
+                </li>
+                <li onclick="openItems()" class="borde"><a href="#">Imagen</a>
+                    <ul>
+                        <li><a href="#">foto a</a></li>
+                        <li><a href="#">foto b</a></li>
+                        <li><a href="#">foto c</a></li>
+                        <li><a href="#">foto d</a></li>
+                        <li><a href="#">foto e</a></li>
+                        <li><a href="#">foto f</a></li>
+                        <li><a href="#">foto g</a></li>
+                        <li><a href="#">foto h</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <p><img src="img/33.jpg" alt="Texto de la imagen">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Etiam turpis tortor, sodales eget tincidunt vel, aliquet vitae justo. Fusce accumsan imperdiet
+                venenatis. Nunc pulvinar ante a augue aliquet volutpat. Nulla at purus non nisi tincidunt dapibus.
+                Integer tincidunt mauris quis nibh porta dignissim. Sed sit amet odio vel nulla interdum vulputate.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+            <p>Maecenas porttitor, erat et porta semper, nulla tellus consequat leo, eget malesuada sem mauris pretium
+                mi. Duis lectus dolor, eleifend vitae imperdiet et, pharetra id libero. Pellentesque sollicitudin ante
+                ac massa iaculis hendrerit. Fusce quis nisl ut turpis elementum aliquam vitae non purus. Nam dignissim
+                quam vitae sem rutrum sed varius ligula placerat. Vestibulum lorem purus, auctor id tempus quis, aliquet
+                at sapien. Nullam sollicitudin purus sollicitudin odio elementum ac dignissim magna consectetur.
+                Suspendisse facilisis quam vel ipsum convallis egestas. Pellentesque egestas faucibus diam, et faucibus
+                orci aliquet ut. Praesent laoreet massa non neque laoreet vestibulum. Suspendisse sollicitudin mauris
+                sed risus ornare ornare. Phasellus vitae nulla eget libero sodales rutrum in ac turpis. Duis consectetur
+                ante massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+            <p>Donec facilisis mattis tristique. Aenean interdum euismod adipiscing. Sed facilisis porttitor nibh at
+                sagittis. Mauris id viverra massa. Nullam vestibulum interdum ligula a cursus. Cras quis aliquam sapien.
+                In sodales venenatis ante, sit amet egestas diam gravida eget. Aenean ac arcu sit amet lacus lacinia
+                mollis. Etiam id nulla imperdiet est viverra venenatis ut quis felis. Fusce volutpat dictum sodales.</p>
+            <p>Maecenas vitae metus lorem, ac bibendum est. Proin sed massa quam, in suscipit dui. In posuere blandit
+                elit accumsan consequat. Nullam vitae dui turpis. Class aptent taciti sociosqu ad litora torquent per
+                conubia nostra, per inceptos himenaeos. Praesent vehicula neque eget nunc fringilla sed feugiat enim
+                posuere. Donec aliquet tempor dolor. Integer turpis tellus, ornare nec scelerisque sit amet, tristique
+                sed urna. Vivamus pellentesque pulvinar nisl, sit amet molestie erat consequat eu.</p>
+            <p>Sed in turpis sed augue eleifend bibendum. Aenean felis dolor, luctus vel tempus sed, imperdiet nec
+                felis. Praesent lectus nunc, imperdiet sit amet blandit vitae, eleifend malesuada sapien. Sed convallis
+                arcu id urna vestibulum elementum. In condimentum sapien sed purus sollicitudin eu pretium diam
+                fermentum. Nunc at lorem sed augue euismod dictum. Quisque eget ultricies arcu. Suspendisse sit amet
+                iaculis tortor.</p>
+        </section>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
