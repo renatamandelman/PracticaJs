@@ -1,7 +1,7 @@
 function toggleTitle() {
   const title = document.querySelector("h1");
   title.innerHTML =
-    title.innerHTML === "Práctica Javascript"? "Hola ¿Como va?": "Práctica Javascript";
+    title.innerHTML === "Práctica Javascript"? "Hola ¿Que Tal?": "Práctica Javascript";
 }
 
 const fontSizes = [0.563, 0.625, 0.75, 0.875, 1, 1.25, 1.375, 1.5];
@@ -28,7 +28,6 @@ function changeFontSize(action /* 0 = reset, 1 = increase, -1 decrease */) {
       toggleButton("btnDec", true);
       if(fontSizeIndex === fontSizes.length - 2){
         toggleButton("btnInc", true);
-
       }
     } else {
       toggleButton("btnDec", false);
@@ -66,17 +65,35 @@ function openItemsMenu(menu){
     document.querySelector(`nav ul li a[data-menu='${menu}'] + ul`).style.display = "block";
 
 }
-// Funcion cambiar fondos y textos
+// Funcion cambiar fondos y color textos
 function changeSection(backgroundColor,textColor){
     const section = document.querySelector("section");
   section.style.backgroundColor = backgroundColor;
     section.style.color = textColor;
-//     const ps = document.querySelectorAll("section p");
-//   for (let i = 0; i < ps.length; i++) {
-//     const p = ps[i];
-//     p.style.fontSize =`${fontSizes[fontSizeIndex]}em` ;
 }
-
+// Funcion Cambiar fuentes
+const fonts =[
+  'Trebuchet MS',
+  'Arial',
+  'Courier New'
+];
 function changeFont(i){
     document.querySelector("section").style.fontFamily= fonts[i] ;
+}
+
+//Funcion Cambiar imagenes
+const img = [
+  '33',
+  '36',
+  '37',
+  '38',
+  '39',
+  '40',
+  '44',
+  '45',
+  '46'
+];
+function changeImg(i) {
+document.querySelector("section p img").setAttribute('src', 'img/' + img[i]+ '.jpg');
+console.log(img[i])
 }
