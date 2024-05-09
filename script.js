@@ -84,17 +84,20 @@ function changeFont(i){
 
 //Funcion Cambiar imagenes
 const img = [
-  '33',
-  '36',
-  '37',
-  '38',
-  '39',
-  '40',
-  '44',
-  '45',
-  '46'
+  ['33','lago'],
+  ['36','puente'],
+  ['37','arbol rosa'],
+  ['38', 'cascada'],
+  ['39', 'pato'],
+  ['40', 'cueva'],
+  ['44', 'ovejas'],
+  ['45', 'loro'],
+  ['46', 'flor amarilla']
 ];
 function changeImg(i) {
-document.querySelector("section p img").setAttribute('src', 'img/' + img[i]+ '.jpg');
-console.log(img[i])
+  const image = document.querySelector("section p img");
+  image.src = `img/${img[i][0]}.jpg`;
+  image.alt = img[i][1];
+  image.title = img[i][1];
+// console.log(img[i][1])
 }
