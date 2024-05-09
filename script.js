@@ -73,12 +73,13 @@ function changeSection(backgroundColor,textColor){
 }
 // Funcion Cambiar fuentes
 const fonts =[
-  'Trebuchet MS',
-  'Arial',
-  'Courier New'
+  "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+  "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif",
+  "Arial, Helvetica, sans-serif",
+  "'Courier New', Courier, monospace"
 ];
 function changeFont(i){
-    document.querySelector("section").style.fontFamily= fonts[i] ;
+    document.querySelector("section").style.fontFamily = fonts[i] ;
 }
 
 //Funcion Cambiar imagenes
